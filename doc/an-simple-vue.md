@@ -17,6 +17,36 @@ commit: naive implementation
 * 关联数据与节点
 * 监测指令节点的set操作，并调用指令的更新函数
 
+伪代码：
+
+```js
+/*根节点以及所有指令节点获取，这里指令节点的selector采用属性选择器来选择*/
+root = document.getElementById(opts.id),
+els  = root.querySelectorAll(selector)
+
+/**
+ * 节点处理
+ */
+;[].forEach.call(els, processNode)
+processNode(root)
+
+/**
+ * processNode中主要做了如下三步
+ */
+parseDirective()
+bindDirective()
+bindAccessors()
+```
+这里需要注意一点是 scope 的概念，vue是采用数据响应式的思想，这里的数据即对应一个vue实例里的 scope(也可称它为作用域，最新版本已改为data/vueInstance.$data)。上面所说的绑定操作都是针对于这个scope来的。
+
+如：
+```js
+scope = {
+    hello: 'ahahah'
+}
+```
+则在模板中声明一个`v-text='hello'`指令的时候，即实现了v-text指令与scope.hello的绑定。
+
 如上便是当前版本vue的基本运行原理。
 
 ### 作者设计思想解读
