@@ -1,0 +1,25 @@
+{
+  "name": "re-vue.js",
+  "version": "0.0.1",
+  "description": "rewrite vue",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaofuzi/deep-in-vue.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "yangxiaofu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaofuzi/deep-in-vue/issues"
+  },
+  "homepage": "https://github.com/xiaofuzi/deep-in-vue#readme"
+}
