@@ -7,25 +7,13 @@ date: 2016-11-08
 
 首先来看一下项目的目录结构：
 
--- src
-<br>
-    -- main.js
-<br>
--- test
-<br>
-    -- test.js
-<br>
-    -- test.html
-<br>
--- .gitignore
-<br>
--- .jshintrc
-<br>
--- component.json
-<br>
--- Gruntfile.js
-<br>
--- package.json
+* src(源码目录，包含一个main.js文件)
+* test(测试代码)
+* .gitignore
+* .jshintrc
+* component.json
+* Gruntfile.js
+* package.json
 
 这个时候还没有什么实质性的代码，main.js中只有短短的一行`module.exports = 123`，但却包含了一个项目所必须的东西。
 
