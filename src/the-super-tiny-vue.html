@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>the super tiny vue.js</title>
+    <style type="text/css">
+        input {
+            outline: none;
+        }
+        #app {
+            width: 400px;
+            padding: 15px;
+            padding-top: 100px;
+            border: 1px solid #999;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
+        <h2 v-text='hello'></h2>
         <input type="text" v-model='counter'>
         <button v-on-click='add' type="button">add</button>
         <p v-text='counter'></p>
@@ -15,12 +29,20 @@
         var vm = new TinyVue({
             el: 'app',
             data: {
-                counter: 1
+                counter: 1,
+                hello: 'ahahah!'
             },
             methods: {
                 add: function () {
                     vm.counter += 1;
                 }
+            },
+            ready () {
+                let self = this;
+                self.hello = 'Ready, go!';
+                setTimeout(function () {
+                    self.hello = 'Done!';
+                }, 3000)
             }
         })
     </script>

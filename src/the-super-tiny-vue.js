@@ -207,6 +207,14 @@ function TinyVue (opts) {
             }
         })
     }
+
+    /**
+     * ready
+     */
+    if (opts.ready && typeof opts.ready == 'function') {
+        this.ready = opts.ready;
+        this.ready();
+    }
 }
 
 /**************************************************************
