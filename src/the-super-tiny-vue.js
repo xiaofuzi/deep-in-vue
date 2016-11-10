@@ -63,7 +63,7 @@ var Directives = {
         el.value = value || '';
         if (!vModelFlag) {
             el.addEventListener('keyup', function (e) {
-                vm.data[key] = e.target.value;
+                vm[key] = e.target.value;
             })
             vModelFlag = true;
         }
