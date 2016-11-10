@@ -1,10 +1,10 @@
 ---
-title: vue的第一份正式源码
+title: vue的雏形,小而全面
 date: 2016-11-09 
 ---
 
-提交：a5e27b1174e9196dcc9dbb0becc487275ea2e84c
-commit: naive implementation
+* 提交：a5e27b1174e9196dcc9dbb0becc487275ea2e84c
+* commit: naive implementation
 
 这可以说是vue的第一份正式源码，已经有了基本的骨架原型。
 
