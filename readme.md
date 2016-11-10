@@ -6,4 +6,4 @@
 
 * [the first commit of vue](./doc/the-first-commit-of-vue.md)   
 * [an simple vue](./doc/an-simple-vue.md)
-* [the-super-tiny-vue](./src/the-super-tiny-vue.js) --- [demo](./src/the-super-tiny-vue.html)
+* [the-super-tiny-vue](./src/the-super-tiny-vue.js) --- [demo](http://yangxiaofu.com/deep-in-vue/src/the-super-tiny-vue.html)
