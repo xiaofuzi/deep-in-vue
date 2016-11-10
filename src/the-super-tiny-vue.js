@@ -40,14 +40,13 @@ var vm = new Vue({
  input的值和p标签的文本会响应式的改变，method中的add方法则和button的click事件绑定。
  简单的说就是, 当点击button按钮的时候，触发button的点击事件回调函数add,在add方法中使counter加1，counter变化后模板中的input
  和p标签会自动更新。vm与模板之间是如何关联的则是通过 v-model、v-on-click、v-text这样的指令声明的。   
+ 
  */
 
 var prefix = 'v';
  /**
   * Directives
   */
-
-var vModelFlag = false;
 
 var Directives = {
     /**
@@ -60,13 +59,23 @@ var Directives = {
      * 对应于 v-model 指令
      */
     model: function (el, value, dirAgr, dir, vm, key) {
+        let eventName = 'keyup';
         el.value = value || '';
-        if (!vModelFlag) {
-            el.addEventListener('keyup', function (e) {
-                vm[key] = e.target.value;
-            })
-            vModelFlag = true;
+
+        /**
+         * 事件绑定控制
+         */
+        if (el.handlers && el.handlers[eventName]) {
+            el.removeEventListener(eventName, el.handlers[eventName]);
+        } else {
+            el.handlers = {};
         }
+
+        el.handlers[eventName] = function (e) {
+            vm[key] = e.target.value;
+        }
+
+        el.addEventListener(eventName, el.handlers[eventName]);
     },
     on: {
         update: function (el, handler, eventName, directive) {
