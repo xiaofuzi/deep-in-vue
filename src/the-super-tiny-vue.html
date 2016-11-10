@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>the super tiny vue.js</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model='counter'>
+        <button v-on-click='add' type="button">add</button>
+        <p v-text='counter'></p>
+    </div>
+    <script src='./the-super-tiny-vue.js'></script>
+    <script>
+        var vm = new TinyVue({
+            el: 'app',
+            data: {
+                counter: 1
+            },
+            methods: {
+                add: function () {
+                    vm.counter += 1;
+                }
+            }
+        })
+    </script>
+    <script src='http://cdn.bootcss.com/vue/1.0.25/vue.js'></script>
+</body>
+</html>
