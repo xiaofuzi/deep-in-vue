@@ -13,4 +13,4 @@
 
 * [the first commit of vue](./doc/the-first-commit-of-vue.md)   
 * [vue的雏形,小而全面](./doc/an-simple-vue.md)
-* [the-super-tiny-vue.js](./src/the-super-tiny-vue.js) --- [demo](http://yangxiaofu.com/deep-in-vue/src/the-super-tiny-vue.html)
+* [the-super-tiny-vue.js](./src/the-super-tiny-vue.js) --- [demo](http://yangxiaofu.com/deep-in-vue/src/the-super-tiny-vue.html) --- [es6版本源码](https://github.com/xiaofuzi/re-vue)
