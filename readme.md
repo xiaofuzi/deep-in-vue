@@ -16,3 +16,4 @@
 * [the-super-tiny-vue.js](./src/the-super-tiny-vue.js) --- [demo](http://yangxiaofu.com/deep-in-vue/src/the-super-tiny-vue.html) --- [es6版本源码](https://github.com/xiaofuzi/re-vue)
 * [谈谈get/set与getState/setState的优劣](https://github.com/xiaofuzi/deep-in-vue/issues/3)
 * [指令式声明的替代解决方案](https://github.com/xiaofuzi/deep-in-vue/issues/4)
+* [数组类型响应式实现原理分析](https://github.com/xiaofuzi/deep-in-vue/issues/5)
