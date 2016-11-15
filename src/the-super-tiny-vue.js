@@ -123,6 +123,9 @@ var Directives = {
     text: function (el, value) {
         el.textContent = value || '';
     },
+    show: function (el, value) {
+        el.style.display = value ? '' : 'none';
+    },
     /**
      * 对应于 v-model 指令
      */
@@ -181,6 +184,7 @@ function TinyVue (opts) {
         root = this.$el = document.getElementById(opts.el),
         els  = this.$els = root.querySelectorAll(getDirSelectors(Directives)),
         bindings = {};
+    this._bindings = bindings;
 
     /**
      * 指令处理
