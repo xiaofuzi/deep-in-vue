@@ -264,7 +264,7 @@ function getDirSelectors (directives) {
  */
 function bindDirective (vm, el, bindings, directive) {
     //从节点属性中移除指令声明
-    el.removeAttribute(directive.attr.value);
+    el.removeAttribute(directive.attr.name);
     
     /**
      * v-text='counter'
