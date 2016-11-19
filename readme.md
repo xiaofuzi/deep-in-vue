@@ -18,3 +18,5 @@
 * [指令式声明的替代解决方案](https://github.com/xiaofuzi/deep-in-vue/issues/4)
 * [数组类型响应式实现原理分析](https://github.com/xiaofuzi/deep-in-vue/issues/5)
 * [深层次对象响应式实现](./doc/deep-path-support.md)
+* [支持watch监测、计算属性、自定义指令](https://github.com/xiaofuzi/deep-in-vue/issues/6)
+* [watch监测、计算属性实现原理](https://github.com/xiaofuzi/deep-in-vue/issues/7)
