@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="app">
-        <h2 v-text='hello'></h2>
+        <h2 v-text='hello' v-show='isShow'></h2>
         <input type="text" v-model='counter'>
         <button v-on-click='add' type="button">add</button>
         <p v-text='counter'></p>
@@ -30,11 +30,13 @@
             el: 'app',
             data: {
                 counter: 1,
-                hello: 'ahahah!'
+                hello: 'ahahah!',
+                isShow: true
             },
             methods: {
                 add: function () {
                     vm.counter += 1;
+                    //vm.isShow = !vm.isShow;
                 }
             },
             ready () {
@@ -45,6 +47,9 @@
                 }, 3000)
             }
         })
+
+        console.log('vm: ', vm);
+        console.log('bindings: ', vm._bindings);
     </script>
 </body>
 </html>

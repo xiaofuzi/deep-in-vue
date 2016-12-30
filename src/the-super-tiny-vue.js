@@ -123,6 +123,9 @@ var Directives = {
     text: function (el, value) {
         el.textContent = value || '';
     },
+    show: function (el, value) {
+        el.style.display = value ? '' : 'none';
+    },
     /**
      * 对应于 v-model 指令
      */
@@ -181,6 +184,7 @@ function TinyVue (opts) {
         root = this.$el = document.getElementById(opts.el),
         els  = this.$els = root.querySelectorAll(getDirSelectors(Directives)),
         bindings = {};
+    this._bindings = bindings;
 
     /**
      * 指令处理
@@ -260,7 +264,7 @@ function getDirSelectors (directives) {
  */
 function bindDirective (vm, el, bindings, directive) {
     //从节点属性中移除指令声明
-    el.removeAttribute(directive.attr.value);
+    el.removeAttribute(directive.attr.name);
     
     /**
      * v-text='counter'
