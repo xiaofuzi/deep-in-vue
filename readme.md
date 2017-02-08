@@ -2,6 +2,8 @@
 
 作为一个成功的开源项目，其成长历程是有许多值得我们借鉴和学习的。通过源码的学习，我们可以发现：
 
+Git-book: [https://xiaofuzi.gitbooks.io/rebuild-vuejs/content/](https://xiaofuzi.gitbooks.io/rebuild-vuejs/content/)
+
 * 作者的设计思路
 * 抛弃了的特性(不代表无价值)
 * 作者的编码习惯、编码细节
