@@ -26,7 +26,3 @@ Git-book: [https://xiaofuzi.gitbooks.io/rebuild-vuejs/content/](https://xiaofuzi
 * [v-if/v-for指令实现原理](https://github.com/xiaofuzi/deep-in-vue/issues/9)
 * [组件系统实现原理](https://github.com/xiaofuzi/deep-in-vue/issues/10)
 
-
-### 讨论交流小组
-
-<img width='250' src='https://camo.githubusercontent.com/ed784cf901a538624926776e1edcf0f8c7aa410e/68747470733a2f2f652d662d652e6769746875622e696f2f6666652f7374617469632f6666652d71712e706e67'/>
